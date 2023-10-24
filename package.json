@@ -4,9 +4,9 @@
   "license": "MIT",
   "author": "Cody Olsen",
   "homepage": "https://react-spring-bottom-sheet.cocody.dev",
-  "repository": "stipsan/react-spring-bottom-sheet",
+  "repository": "sfc-maple/react-spring-bottom-sheet",
   "bugs": {
-    "url": "https://github.com/stipsan/react-spring-bottom-sheet/issues"
+    "url": "https://github.com/sfc-maple/react-spring-bottom-sheet/issues"
   },
   "version": "3.4.1",
   "main": "dist/index.js",
@@ -128,7 +128,6 @@
     "package.json": "prettier-package-json --write"
   },
   "meta": {
-    "twitter:site": "@stipsan",
     "twitter:image:src": "https://react-spring-bottom-sheet.cocody.dev/somecard.png"
   },
   "prettier": {

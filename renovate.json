@@ -1,8 +1,13 @@
 {
-  "extends": ["github>stipsan/renovate-presets:auto"],
+  "extends": [
+    "github>sfc-maple/renovate-presets:auto"
+  ],
   "packageRules": [
     {
-      "depTypeList": ["dependencies", "peerDependencies"],
+      "depTypeList": [
+        "dependencies",
+        "peerDependencies"
+      ],
       "automerge": false
     }
   ]
