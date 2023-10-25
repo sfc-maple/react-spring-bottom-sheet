@@ -135,5 +135,6 @@
     "singleQuote": true
   },
   "source": "src/index.tsx",
-  "style": "dist/style.css"
+  "style": "dist/style.css",
+  "packageManager": "yarn@4.0.0"
 }
