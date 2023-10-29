@@ -50,7 +50,7 @@ export default function StickyNugget({
             </p>
           ))}
 
-          <Link href={example}>
+          <Link href={example} legacyBehavior>
             <a className="underline-none hover:underline focus:underline text-2xl  font-bold text-gray-700 hover:text-gray-800 active:text-gray-900 focus:outline-none">
               Open example 👀
             </a>

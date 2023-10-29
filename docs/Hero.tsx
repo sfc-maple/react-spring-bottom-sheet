@@ -6,6 +6,7 @@ import styles from './Hero.module.css'
 const subtitle = 'Accessible, Delightful, and Performant'
 
 const Link: React.FC<{
+  children: React.ReactNode
   href?: string
   target?: string
   className?: string
@@ -26,22 +27,22 @@ const Link: React.FC<{
 
 const Links = ({ className }: { className?: string }) => (
   <>
-    <Link
+    <a
       className={className}
       href="https://github.com/stipsan/react-spring-bottom-sheet/blob/main/GET_STARTED.md#get-started"
     >
       Get started
-    </Link>
-    <Link
+    </a>
+    <a
       className={className}
       href="https://github.com/stipsan/react-spring-bottom-sheet"
     >
       GitHub
-    </Link>
+    </a>
   </>
 )
 // The wrapping in <g> is because of Safari 🙄 https://bug-149617-attachments.webkit.org/attachment.cgi?id=262048
-const SvgText: React.FC<{ x?: string; y?: string; className?: string }> = ({
+const SvgText: React.FC<{ children: React.ReactNode, x?: string; y?: string; className?: string }> = ({
   children,
   className,
   x = '23',
