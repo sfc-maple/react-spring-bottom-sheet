@@ -576,11 +576,12 @@ export const BottomSheet = React.forwardRef<
         newY = maxSnapRef.current
       }
 
-      if (memo === maxSnapRef.current && scrollRef.current.scrollTop > 0) {
-        newY = maxSnapRef.current
+      if (my < 0 && scrollRef.current.scrollTop <= 0) {
+        preventScrollingRef.current = true;
+      } else {
+        preventScrollingRef.current = false;
+        return;
       }
-
-      preventScrollingRef.current = newY < maxSnapRef.current
     } else {
       preventScrollingRef.current = false
     }

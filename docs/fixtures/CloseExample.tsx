@@ -11,7 +11,7 @@ type Props = {
 
 const CloseExample = forwardRef<HTMLAnchorElement, Props>(
   ({ className, ...props }, ref) => (
-    <Link href="/">
+    <Link href="/" legacyBehavior>
       <a
         {...props}
         className={cx(
